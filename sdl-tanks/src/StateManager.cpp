@@ -1,6 +1,7 @@
 #include "StateManager.h"
 
 #include "StartupState.h"
+#include "PlayingState.h"
 
 State* StateManager::current_state;
 
@@ -43,9 +44,9 @@ void StateManager::set_current_state(int state_id)
         case STATE_STARTUP:
             current_state = StartupState::get_instance();
             break;
-//        case STATE_PLAYING:
-//            current_state = PlayingState::get_instance();
-//            break;
+        case STATE_PLAYING:
+            current_state = PlayingState::get_instance();
+            break;
             
         default:
             break;

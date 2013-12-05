@@ -4,8 +4,9 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 
-class State
-{
+#include "Event.h"
+
+class State: public Event {
 public:
     virtual void activate() = 0;
     virtual void deactivate() = 0;

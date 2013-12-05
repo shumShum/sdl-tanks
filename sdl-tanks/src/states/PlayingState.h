@@ -1,5 +1,5 @@
-#ifndef __SDL_game__StartupState__
-#define __SDL_game__StartupState__
+#ifndef __SDL_game__PlayingState__
+#define __SDL_game__PlayingState__
 
 #include <iostream>
 #include <SDL2/SDL.h>
@@ -7,12 +7,12 @@
 
 #include "State.h"
 
-class StartupState: public State {
+class PlayingState: public State {
 private:
-    static StartupState instance;
+    static PlayingState instance;
     
 public:
-    StartupState();
+    PlayingState();
     
 public:
     void activate();
@@ -24,7 +24,7 @@ public:
     void on_loop();
     void render(SDL_Renderer* ren);
     
-    static StartupState* get_instance();
+    static PlayingState* get_instance();
 };
 
 #endif

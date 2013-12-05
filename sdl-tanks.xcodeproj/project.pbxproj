@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A481637E18512E5E00CA3D36 /* PlayingState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A481637C18512E5E00CA3D36 /* PlayingState.cpp */; };
 		A4B67A071850E7C500DD74CC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4B679EF1850E7C500DD74CC /* main.cpp */; };
 		A4B67A081850E7C500DD74CC /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B679F21850E7C500DD74CC /* bg.png */; };
 		A4B67A091850E7C500DD74CC /* bg_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B679F31850E7C500DD74CC /* bg_1.png */; };
@@ -19,6 +20,7 @@
 		A4B67A121850E7C500DD74CC /* StartupState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4B67A011850E7C500DD74CC /* StartupState.cpp */; };
 		A4B67A151850E98600DD74CC /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B67A131850E98600DD74CC /* SDL2_image.framework */; };
 		A4B67A161850E98600DD74CC /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B67A141850E98600DD74CC /* SDL2.framework */; };
+		A4B67A191850FDA200DD74CC /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4B67A171850FDA200DD74CC /* Event.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A4B679C31850DE5E00DD74CC /* sdl-tanksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "sdl-tanksTests.xctest"; path = "/Users/shum/www/GameDev/sdl-tanks/sdl-tanks/build/Debug/sdl-tanksTests.xctest"; sourceTree = "<absolute>"; };
+		A481637B185128BF00CA3D36 /* sdl-tanksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "sdl-tanksTests.xctest"; path = "/Users/shum/www/GameDev/sdl-tanks/sdl-tanks/build/Debug/sdl-tanksTests.xctest"; sourceTree = "<absolute>"; };
+		A481637C18512E5E00CA3D36 /* PlayingState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayingState.cpp; sourceTree = "<group>"; };
+		A481637D18512E5E00CA3D36 /* PlayingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingState.h; sourceTree = "<group>"; };
 		A4B679EF1850E7C500DD74CC /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A4B679F21850E7C500DD74CC /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		A4B679F31850E7C500DD74CC /* bg_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_1.png; sourceTree = "<group>"; };
@@ -47,9 +51,11 @@
 		A4B67A011850E7C500DD74CC /* StartupState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StartupState.cpp; sourceTree = "<group>"; };
 		A4B67A021850E7C500DD74CC /* StartupState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartupState.h; sourceTree = "<group>"; };
 		A4B67A031850E7C500DD74CC /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
-		A4B67A051850E7C500DD74CC /* sdl-tanks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sdl-tanks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4B67A051850E7C500DD74CC /* sdl-tanks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "sdl-tanks.app"; path = "/Users/shum/www/GameDev/sdl-tanks/sdl-tanks/build/Debug/sdl-tanks.app"; sourceTree = "<absolute>"; };
 		A4B67A131850E98600DD74CC /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2_image.framework; sourceTree = "<group>"; };
 		A4B67A141850E98600DD74CC /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
+		A4B67A171850FDA200DD74CC /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
+		A4B67A181850FDA200DD74CC /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +83,6 @@
 			children = (
 				A4B679AB1850DE5E00DD74CC /* sdl-tanks */,
 				A4B679A41850DE5E00DD74CC /* Frameworks */,
-				A4B67A051850E7C500DD74CC /* sdl-tanks.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +133,8 @@
 				A4B679FA1850E7C500DD74CC /* Game.h */,
 				A4B679FC1850E7C500DD74CC /* StateManager.cpp */,
 				A4B679FD1850E7C500DD74CC /* StateManager.h */,
+				A4B67A171850FDA200DD74CC /* Event.cpp */,
+				A4B67A181850FDA200DD74CC /* Event.h */,
 				A4B679FE1850E7C500DD74CC /* states */,
 			);
 			path = src;
@@ -136,9 +143,11 @@
 		A4B679FE1850E7C500DD74CC /* states */ = {
 			isa = PBXGroup;
 			children = (
+				A4B67A031850E7C500DD74CC /* State.h */,
 				A4B67A011850E7C500DD74CC /* StartupState.cpp */,
 				A4B67A021850E7C500DD74CC /* StartupState.h */,
-				A4B67A031850E7C500DD74CC /* State.h */,
+				A481637C18512E5E00CA3D36 /* PlayingState.cpp */,
+				A481637D18512E5E00CA3D36 /* PlayingState.h */,
 			);
 			path = states;
 			sourceTree = "<group>";
@@ -178,7 +187,7 @@
 			);
 			name = "sdl-tanksTests";
 			productName = "sdl-tanksTests";
-			productReference = A4B679C31850DE5E00DD74CC /* sdl-tanksTests.xctest */;
+			productReference = A481637B185128BF00CA3D36 /* sdl-tanksTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -244,7 +253,9 @@
 			files = (
 				A4B67A101850E7C500DD74CC /* StateManager.cpp in Sources */,
 				A4B67A071850E7C500DD74CC /* main.cpp in Sources */,
+				A4B67A191850FDA200DD74CC /* Event.cpp in Sources */,
 				A4B67A0E1850E7C500DD74CC /* Game.cpp in Sources */,
+				A481637E18512E5E00CA3D36 /* PlayingState.cpp in Sources */,
 				A4B67A121850E7C500DD74CC /* StartupState.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +443,7 @@
 				A4B679D51850DE5E00DD74CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4B679D61850DE5E00DD74CC /* Build configuration list for PBXNativeTarget "sdl-tanksTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +452,7 @@
 				A4B679D81850DE5E00DD74CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
