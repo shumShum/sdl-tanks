@@ -1,10 +1,6 @@
 #ifndef __SDL_game__StartupState__
 #define __SDL_game__StartupState__
 
-#include <iostream>
-#include <SDL2/SDL.h>
-#include <SDL2_image/SDL_image.h>
-
 #include "State.h"
 
 class StartupState: public State {
@@ -25,6 +21,10 @@ public:
     void render(SDL_Renderer* ren);
     
     static StartupState* get_instance();
+    
+private:
+    void draw_background(SDL_Renderer* ren);
+    void draw_labels(SDL_Renderer* ren);
 };
 
 #endif

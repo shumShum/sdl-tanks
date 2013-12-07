@@ -4,13 +4,12 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 
-#include "State.h"
-
 enum {
     STATE_STARTUP,
     STATE_PLAYING
 };
 
+class State;
 class StateManager
 {
 private:

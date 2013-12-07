@@ -1,10 +1,6 @@
 #ifndef __SDL_game__PlayingState__
 #define __SDL_game__PlayingState__
 
-#include <iostream>
-#include <SDL2/SDL.h>
-#include <SDL2_image/SDL_image.h>
-
 #include "State.h"
 
 class PlayingState: public State {

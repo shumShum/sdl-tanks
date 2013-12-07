@@ -1,5 +1,4 @@
 #include "PlayingState.h"
-#include "StateManager.h"
 
 PlayingState::PlayingState() {
 }

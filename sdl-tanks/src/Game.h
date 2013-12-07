@@ -26,5 +26,4 @@ public:
     static void quit_game();
 };
 
-
 #endif

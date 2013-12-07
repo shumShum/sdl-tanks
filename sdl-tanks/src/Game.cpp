@@ -36,13 +36,13 @@ bool Game::init() {
                               SDL_WINDOWPOS_UNDEFINED,
                               SDL_WINDOWPOS_UNDEFINED,
                               640, 480,
-                              SDL_WINDOW_FULLSCREEN | SDL_WINDOW_OPENGL);
+                              SDL_WINDOW_OPENGL);
     if(screen == NULL) {
         printf("Can't set videomode: %s", SDL_GetError());
         return false;
     }
     
-    ren = SDL_CreateRenderer(screen, -1, SDL_RENDERER_ACCELERATED |SDL_RENDERER_PRESENTVSYNC);
+    ren = SDL_CreateRenderer(screen, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     if (ren == NULL){
         printf("SDL_CreateRenderer Error: %s", SDL_GetError());
         return false;

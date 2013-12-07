@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A481637E18512E5E00CA3D36 /* PlayingState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A481637C18512E5E00CA3D36 /* PlayingState.cpp */; };
+		A4816385185365D200CA3D36 /* ImageStorage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4816383185365D200CA3D36 /* ImageStorage.cpp */; };
 		A4B67A071850E7C500DD74CC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4B679EF1850E7C500DD74CC /* main.cpp */; };
 		A4B67A081850E7C500DD74CC /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B679F21850E7C500DD74CC /* bg.png */; };
 		A4B67A091850E7C500DD74CC /* bg_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B679F31850E7C500DD74CC /* bg_1.png */; };
@@ -37,6 +38,8 @@
 		A481637B185128BF00CA3D36 /* sdl-tanksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "sdl-tanksTests.xctest"; path = "/Users/shum/www/GameDev/sdl-tanks/sdl-tanks/build/Debug/sdl-tanksTests.xctest"; sourceTree = "<absolute>"; };
 		A481637C18512E5E00CA3D36 /* PlayingState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayingState.cpp; sourceTree = "<group>"; };
 		A481637D18512E5E00CA3D36 /* PlayingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingState.h; sourceTree = "<group>"; };
+		A4816383185365D200CA3D36 /* ImageStorage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageStorage.cpp; sourceTree = "<group>"; };
+		A4816384185365D200CA3D36 /* ImageStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageStorage.h; sourceTree = "<group>"; };
 		A4B679EF1850E7C500DD74CC /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A4B679F21850E7C500DD74CC /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		A4B679F31850E7C500DD74CC /* bg_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_1.png; sourceTree = "<group>"; };
@@ -78,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4816382185365D200CA3D36 /* storages */ = {
+			isa = PBXGroup;
+			children = (
+				A4816383185365D200CA3D36 /* ImageStorage.cpp */,
+				A4816384185365D200CA3D36 /* ImageStorage.h */,
+			);
+			path = storages;
+			sourceTree = "<group>";
+		};
 		A4B679991850DE5E00DD74CC = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +148,7 @@
 				A4B67A171850FDA200DD74CC /* Event.cpp */,
 				A4B67A181850FDA200DD74CC /* Event.h */,
 				A4B679FE1850E7C500DD74CC /* states */,
+				A4816382185365D200CA3D36 /* storages */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -257,6 +270,7 @@
 				A4B67A0E1850E7C500DD74CC /* Game.cpp in Sources */,
 				A481637E18512E5E00CA3D36 /* PlayingState.cpp in Sources */,
 				A4B67A121850E7C500DD74CC /* StartupState.cpp in Sources */,
+				A4816385185365D200CA3D36 /* ImageStorage.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

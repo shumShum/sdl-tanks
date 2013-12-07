@@ -3,8 +3,11 @@
 
 #include <iostream>
 #include <SDL2/SDL.h>
+#include <SDL2_image/SDL_image.h>
 
 #include "Event.h"
+#include "StateManager.h"
+#include "ImageStorage.h"
 
 class State: public Event {
 public:
